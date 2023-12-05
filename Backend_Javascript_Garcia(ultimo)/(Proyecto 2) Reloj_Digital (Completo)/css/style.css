@@ -1,0 +1,49 @@
+
+body{
+    
+    background-image: url(../imagen/image2.jpg);
+    /*Ajusta el fondo a todo el contenedor*/
+    background-size: cover;
+    /*La imagen de fondo no se duplicara*/
+    background-repeat: no-repeat;
+    /*mantiene la imagen fija asi se desplace en la pagina*/
+    background-attachment: fixed;
+    margin: 0;
+    /*Ajustar a toda la altura de la pantalla*/
+    min-height: 100vh;
+    /*Justifica con grid*/
+    display: grid;
+    /*Justifica el contenido vertical y horizontalmente*/
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle{
+    position: relative;
+    left: 388px;
+    color: #fff;
+    top: 58px;
+}
+
+.tittle h1{
+    position: relative;
+    left: 42px;
+}
+
+.boton{
+    background-color: rgb(3, 68, 129);
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    left: 463px;
+    top: -140px;
+}
+
+.boton:hover {
+    background-color: #696868;
+}
+

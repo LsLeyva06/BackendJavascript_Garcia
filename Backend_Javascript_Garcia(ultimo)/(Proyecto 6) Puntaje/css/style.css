@@ -1,0 +1,45 @@
+
+body{
+    background-image: url(../img/imagen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.icon{
+    /*Se posicionan de manera absoluta respecto al contenedor*/
+    position: absolute;
+    left: 39px;
+    top:29px;
+    font-size: 2rem;
+}
+
+.puntaje{
+    width: 880px;
+    height: 395px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border:0.2rem solid rgb(1, 38, 63); ;
+    border-radius: 2vh;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 333px;
+}
+
+/*Clase que se creo desde javascript*/
+.item{
+    width: 50px;
+    height: 45px;
+    background-color: rgb(249, 249, 255);
+    cursor: pointer;
+    /*Propiedades de mascara*/
+    -webkit-mask-image: url("../img/estrella.svg");
+    mask-image: url("../img/estrella.svg");
+}
+/*Clase adicional esta muestra el color mientras se pasa el mouse*/
+.item.selec {
+    background-color: rgba(13, 102, 5, 0.699);
+}

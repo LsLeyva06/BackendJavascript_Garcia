@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: black;
+}
+
+body{
+    background-color: rgb(127, 195, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 170px;
+    top: -45px;
+}
+
+.formulario {
+    box-shadow: 3px 3px  20px rgb(53, 137, 211);
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);    
+    width: 200px;
+    height: 120px;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: -22px;
+}
+
+form{
+    background-color: rgb(255, 255, 255);   
+}
+
+input{
+    width: 160px;
+    margin: 4px;
+    border-radius: 1vh;
+}
+
+#agregar{
+    height: 30px;
+    background-color: rgb(141, 2, 2);
+    color: rgb(245, 233, 233);
+    border-radius: 1vh;
+    border: 0.2 solid rgb(138, 44, 44);
+    border-color: rgb(112, 89, 134);
+}
+
+#agregar:hover{
+    background-color: rgb(4, 99, 27);
+}
+
+.nombre{
+    width: 160px;
+    height: 20px;
+    border-color: rgb(112, 89, 134);
+    text-align: center;
+}
+.lista{
+    background-color: rgb(255, 255, 255);   
+    margin-top: 30px;
+    width: 600px;
+    border-radius: 2vh;
+    box-shadow: 3px 3px  20px rgb(53, 137, 211);
+}
+
+.evento{
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 10px 5px 10px 10px;
+    border-radius: 1rem;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid rgb(112, 89, 134);
+}
+.listaEventos2{
+    padding: 10px 5px;
+
+}
+.dias{color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.diasFaltantes{
+    font-size: 30px;
+    color: rgb(8, 160, 84);
+
+}
+.nombreEvento{
+    font-size: 30px;
+    color: black;
+    overflow-x:auto;
+}
+
+.fechaEvento{
+    font-size: 20px;
+    color: black;
+}
+
+.eliminar{
+   width: 60px;
+   height: 40px;
+   background-color: rgb(4, 99, 27);
+   border-radius: 7px;
+   box-shadow: 1px 1px  2px rgba(53, 211, 61, 0.432);
+}
+
+.eliminar:hover{
+    background-color: rgb(110, 2, 2);
+    cursor: pointer;
+}
+
+.link{
+    position: relative;
+    top: 20px;
+}

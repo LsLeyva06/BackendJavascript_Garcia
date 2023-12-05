@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    max-width: 12rem;
+    margin-left: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #69a88d;
+    height: 212px;
+}
+
+.listaMenu{
+    /*Elimina las viñetas de las listas*/
+    list-style-type: none;
+    /*los agrega para que no queden uno debajo del otro*/
+    display: flex;
+    /*separación*/
+    gap: 1rem;
+}
+
+.listaMenu li a {
+    /*quita la linea del la etiqueta a(enlace)*/
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+/*Este estilo hace que no se vea mi boton en la versión web */
+.abrirMenu, 
+.cerrarMenu{
+    display: none;
+}
+
+/*Empezamos con el reesponsive
+@media son los media queries estos son los que permiten aplicar los estilos de css segun
+el tipo de dispositivo (todo esto dependiendo la resolución,ancho de la pantalla o navegador)*/
+ 
+/*screen = pantalla*/
+
+@media screen and (max-width: 500px) {
+
+    .abrirMenu, 
+    .cerrarMenu{
+        display: block;
+        border: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .abrirMenu{
+        background-color: transparent;
+    }
+
+    .cerrarMenu{
+        background-color: transparent;
+        color: #69a88d;
+    }
+
+    .menuPrincipal{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1.5rem;
+        /*No se mueve el menu*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        /*vmax es una unidad de porcentaje relativo, maneja la transparencia*/
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.35);
+    }
+
+    .menuPrincipal.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .listaMenu {
+        flex-direction: column;
+        /*me alinea los datos hacia abajo y a la derecha con el end*/
+        align-items: end;
+    }
+
+    .listaMenu li a {
+        color: white;
+    }
+
+
+
+
+
+}
+
+
+

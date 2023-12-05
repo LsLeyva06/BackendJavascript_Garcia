@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #54cbdb;
+}
+
+.reloj{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 350px;
+}  
+
+.dias .di ,
+.horas .hor ,
+.minutos .min ,
+.segundos .seg{
+    color: rgb(88, 19, 19);
+    width: 70px;
+    height: 30px;
+    margin-right: 20px;
+    box-shadow: inset 0px 0px 3px 5px white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.dias p ,
+.horas p ,
+.minutos p ,
+.segundos p{
+    color: rgb(88, 19, 19);
+    margin-right: 20px;
+}
+
+.img {
+    width: 700px;
+    height: 700px;
+    background-image: url("../img/papaNoel.png");
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+.botones{
+    display: flex;
+    position: absolute;
+    left: 500px;
+    top: 350px;
+    
+}
+
+.botones button {
+    width: 70px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    border: none;
+    /*separación*/
+    margin-right: 20px;
+}
+
+.botones button:hover{
+    background-color: rgb(174, 5, 5);
+}

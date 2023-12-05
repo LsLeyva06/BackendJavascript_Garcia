@@ -1,0 +1,51 @@
+
+body{
+    background-image: url(../imagen/reloj2.jpg);
+    /*Ajusta el fondo a todo el contenedor*/
+    background-size: cover;
+    /*La imagen de fondo no se duplicara*/
+    background-repeat: no-repeat;
+    /*mantiene la imagen fija asi se desplace en la pagina*/
+    background-attachment: fixed;
+    margin: 0;
+    /*Ajustar a toda la altura de la pantalla*/
+    min-height: 100vh;
+    /*Justifica con grid*/
+    display: grid;
+    /*Justifica el contenido vertical y horizontalmente*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 34, 32);
+}
+
+
+.icon{
+    /*Se posicionan de manera absoluta respecto al contenedor*/
+    position: absolute;
+    left: 39px;
+    top:29px;
+    font-size: 2rem;
+}
+
+.reloj{
+    border:1rem solid rgb(108, 126, 231);
+    width: 300px;
+    height: 300px;
+    /*Se ajuste*/
+    display: flex;
+    /*Centrar el contenido vertical y horinzontal*/
+    justify-content: center;
+    align-items: center;
+    /*El rectangulo se vuelve circular*/
+    border-radius: 50vh;
+    /*Esta tipografia hara la separación entre numeros*/
+    font-family: monospace;
+    font-size: 3rem;
+    color:  rgb(129, 192, 252) ;
+
+}
+
+.reloj:hover{
+    border: 1rem solid rgb(13, 65, 8);
+    color: rgb(67, 255, 108);
+}

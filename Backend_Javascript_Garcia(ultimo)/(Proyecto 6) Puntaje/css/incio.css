@@ -1,0 +1,48 @@
+body{
+    background-image: url(../img/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.servicio {
+    width: 880px;
+    height: 395px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 0.2rem solid rgb(1, 38, 63);
+    border-radius: 1vh;
+    color: antiquewhite;
+    position: relative;
+    top: 196px;
+    left: 270px;
+}
+
+.servicio h1{
+    position: relative;
+    left: 40px;
+}
+
+
+.servicio .boton{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top: 88px;
+    right: 283px;
+    background:  rgba(0, 0, 0, 0.5);
+    border: 0.2rem solid rgb(1, 38, 63);
+    border-radius: 1vh;
+    color: aliceblue;
+    font-size: large;
+    cursor: pointer;
+
+}
+
+.servicio .boton:hover{
+    background-color: rgb(9, 32, 59);
+    border: 0.2rem solid rgb(13, 125, 177);
+}
